@@ -13,6 +13,8 @@ To display the contents of both file1.txt and file2.txt, you can use
 Copy code :*
 **cat file1.txt file2.txt**
 
+### cat in analytics or data processing
+
 In analytics or data processing, the cat command might be used in conjunction with input and output redirection for various purposes:
 
 Data Pipelining: In data analysis, you might use cat to concatenate multiple files and then redirect the output to another command for further processing. For instance:
