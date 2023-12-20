@@ -116,3 +116,57 @@ echo -e "Line 1\nLine 2"
 This command will output two lines, separating Line 1 and Line 2 with a newline.
 
 echo is a simple yet useful command for generating output in the terminal, making it helpful for displaying messages, variable values, or formatting text within scripts or when working directly on the command line.
+
+# cp
+
+The 'cp' command in the Command Line Interface (CLI) is used to copy files or directories from one location to another.
+
+Here's the basic syntax of the cp command:
+
+```
+cp [options] source destination
+```
+source: This is the file or directory you want to copy.
+destination: This is the location where you want to copy the source file or directory.
+Here are a few examples of how the cp command can be used:
+
+Copying a File:
+
+To copy a file named file1.txt to another location or with a different name, you would use:
+
+```
+cp file1.txt /path/to/destination/
+```
+You can also specify a different name for the copied file:
+
+```
+cp file1.txt /path/to/destination/newfile.txt
+```
+Copying Multiple Files:
+
+You can copy multiple files into a directory:
+
+```
+cp file1.txt file2.txt /path/to/destination/
+```
+This command will copy file1.txt and file2.txt to the specified destination directory.
+
+Copying a Directory:
+
+To copy an entire directory and its contents recursively, use the -r flag (recursive):
+
+```
+cp -r directory1 /path/to/destination/
+```
+Replace directory1 with the name of the directory you want to copy.
+
+Preserving Attributes:
+
+Using the -p flag preserves the file attributes such as timestamps, permissions, etc.:
+
+```
+cp -p file1.txt /path/to/destination/
+```
+This will copy file1.txt to the destination while preserving its attributes.
+
+The cp command is a fundamental tool for copying files and directories in Unix-based systems, allowing users to duplicate files, create backups, and organize their file system efficiently from the command line.
