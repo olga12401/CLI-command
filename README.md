@@ -10,7 +10,7 @@ The 'ls' command in the command line interface (CLI) is used to list the content
 
 
 ## cat
-The cat command is used to display the contents of a file. The term "cat" stands for "concatenate," which originally was its primary function: to concatenate and display the content of one or multiple files. However, it's most commonly used to simply display the contents of a single file.
+The 'cat' command is used to display the contents of a file. The term "cat" stands for "concatenate," which originally was its primary function: to concatenate and display the content of one or multiple files. However, it's most commonly used to simply display the contents of a single file.
 
 *bash
 Copy code :*
@@ -66,7 +66,7 @@ The 'echo' command in the Command Line Interface (CLI) is used to display text o
 
 Here are a few examples of how the echo command is used:
 
-Displaying Text:
+**Displaying Text:**
 
 *bash
 Copy code*
@@ -74,7 +74,7 @@ Copy code*
 
 This command will output Hello, world! to the terminal.
 
-Displaying Variables:
+**Displaying Variables:**
 
 You can use echo to display the value of a variable:
 
@@ -85,7 +85,7 @@ echo "My name is $name"**
 
 This command will output My name is John to the terminal, interpolating the value of the variable name.
 
-Newlines and Special Characters:
+**Newlines and Special Characters:**
 
 You can use the -e option to interpret backslash escapes, such as \n for a newline:
 
