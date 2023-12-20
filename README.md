@@ -326,3 +326,39 @@ mkdir [options] directory_name
 ```
 directory_name: This is the name of the directory or directories you want to create.
 
+# grep
+
+The 'grep' command in the Command Line Interface (CLI) is used to search for specific patterns or text within files or the output of other commands.
+
+Here's the basic syntax of the grep command:
+
+```
+grep [options] pattern [file1 file2 ...]
+```
+pattern: This is the text or pattern you want to search for. It can be a simple string or a regular expression.
+file1, file2, etc.: These are the names of the files in which you want to search. If no file is specified, grep reads from the standard input, which can be the output of another command using a pipe |.
+Here are some common uses of the grep command:
+
+**Searching for a Pattern in a File:**
+
+To search for a specific pattern in a file:
+
+```
+grep "pattern" filename.txt
+```
+This command searches for the specified pattern in filename.txt and displays the lines containing that pattern.
+
+**Searching in Multiple Files:**
+
+You can search for a pattern in multiple files simultaneously:
+
+```
+grep "pattern" file1.txt file2.txt
+```
+This command searches for the pattern in both file1.txt and file2.txt.
+
+```
+grep root /ets/*
+```
+
+![image](https://github.com/olga12401/CLI-command/assets/86374953/cbe1bb6e-112f-4861-b2f4-166c1143ec89)
