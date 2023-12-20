@@ -117,7 +117,7 @@ This command will output two lines, separating Line 1 and Line 2 with a newline.
 
 echo is a simple yet useful command for generating output in the terminal, making it helpful for displaying messages, variable values, or formatting text within scripts or when working directly on the command line.
 
-# cp
+## cp
 
 The 'cp' command in the Command Line Interface (CLI) is used to copy files or directories from one location to another.
 
@@ -170,3 +170,64 @@ cp -p file1.txt /path/to/destination/
 This will copy file1.txt to the destination while preserving its attributes.
 
 The cp command is a fundamental tool for copying files and directories in Unix-based systems, allowing users to duplicate files, create backups, and organize their file system efficiently from the command line.
+
+## mv
+
+The mv command is used to move files or directories from one location to another. 
+
+
+In the Command Line Interface (CLI), the mv command is used to move files or directories from one location to another. It can also be used to rename files and directories by effectively "moving" them to a new name within the same directory.
+
+**The basic syntax of the mv command is:**
+
+```
+mv [options] source destination
+```
+source: This is the file or directory you want to move or rename.
+destination: This is the new location or new name for the file or directory.
+Here are some common uses of the mv command:
+
+**Move a File to a Directory:**
+
+To move a file named file1.txt to another directory:
+
+```
+mv file1.txt /path/to/destination/
+```
+This command moves file1.txt to the specified destination directory.
+
+**Rename a File:**
+
+To rename a file, use mv with the new name:
+
+```
+mv oldfile.txt newfile.txt
+```
+This command renames oldfile.txt to newfile.txt.
+
+**Move and Rename:**
+
+You can combine moving and renaming in one command:
+
+```
+mv file1.txt /path/to/destination/newfile.txt
+```
+This moves file1.txt to the destination directory and renames it to newfile.txt.
+
+**Move a Directory:**
+
+To move an entire directory and its contents:
+
+```
+mv directory1 /path/to/destination/
+```
+Replace directory1 with the name of the directory you want to move.
+
+**Force Move (Override):**
+
+Adding the -f flag will force move and overwrite existing files without prompting:
+
+```
+mv -f file1.txt /path/to/destination/
+```
+Use this with caution as it overwrites files without confirmation.
