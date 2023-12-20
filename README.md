@@ -365,7 +365,7 @@ root: The pattern being searched for. In this case, it's the word "root".
 So, when you execute grep root /etc/*, the command tries to search for the word "root" in the contents of all files within the /etc/ directory and any subdirectories. If any file within /etc/ contains the word "root," grep will display the lines from those files containing that pattern.
 
 ```
-grep root /ets/*
+grep root /etc/*
 ```
 
 
