@@ -314,3 +314,15 @@ rm -i filename.txt
 This prompts for confirmation before deleting the file.
 
 The rm command is a powerful tool, but it's important to be cautious when using it, especially with the -r (recursive) or -f (force) flags, as it permanently deletes files and directories without moving them to the trash or providing an undo option. Always double-check the files and directories you're deleting to avoid unintentional data loss.
+
+## mkdir 
+
+The 'mkdir' command in the Command Line Interface (CLI) is used to create new directories or folders within the file system.
+
+Here's the basic syntax of the mkdir command:
+
+```
+mkdir [options] directory_name
+```
+directory_name: This is the name of the directory or directories you want to create.
+
