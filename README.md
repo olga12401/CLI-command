@@ -357,8 +357,15 @@ grep "pattern" file1.txt file2.txt
 ```
 This command searches for the pattern in both file1.txt and file2.txt.
 
+The command 'grep root /etc/*' is attempting to search for the word "root" in the contents of all files within the /etc/ directory and its subdirectories. Let's break down the components:
+
+grep: The command used for pattern matching and searching.
+root: The pattern being searched for. In this case, it's the word "root".
+/etc/*: This is a wildcard that represents all files in the /etc/ directory and its subdirectories. The * is a wildcard character that matches any sequence of characters in filenames within the /etc/ directory.
+So, when you execute grep root /etc/*, the command tries to search for the word "root" in the contents of all files within the /etc/ directory and any subdirectories. If any file within /etc/ contains the word "root," grep will display the lines from those files containing that pattern.
+
 ```
 grep root /ets/*
 ```
 
-![image](https://github.com/olga12401/CLI-command/assets/86374953/cbe1bb6e-112f-4861-b2f4-166c1143ec89)
+
