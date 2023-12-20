@@ -8,6 +8,7 @@ Viewing Files and Directories: To see what files and directories exist in your c
 
 ```
 ls
+
 ```
 This will list all the files and directories in the current directory.
 
