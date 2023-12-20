@@ -1,5 +1,14 @@
 # CLI-command
 
+## ls
+
+The 'ls' command in the command line interface (CLI) is used to list the contents of a directory. It displays the files and directories within the specified directory, allowing you to see what files and folders exist in a particular location.
+
+
+
+
+
+
 ## cat
 The cat command is used to display the contents of a file. The term "cat" stands for "concatenate," which originally was its primary function: to concatenate and display the content of one or multiple files. However, it's most commonly used to simply display the contents of a single file.
 
@@ -49,4 +58,41 @@ Copy code :*
 
 This command appends the content of new_data.csv to existing_data.csv without overwriting the original file.
 
-In analytics and data processing, cat is often used as a simple tool to manage and manipulate data streams, combining with other commands or tools through input and output redirection to perform various data-related tasks.
+In analytics and data processing, cat is often used as a simple tool to manage and manipulate data streams, combining with other commands or tools through input and output redirection to perform various data-related tasks. 
+
+## echo
+
+The 'echo' command in the Command Line Interface (CLI) is used to display text or variables as output to the terminal. It's a straightforward command often used for printing messages or displaying variable values within shell scripts or directly in the terminal.
+
+Here are a few examples of how the echo command is used:
+
+Displaying Text:
+
+*bash
+Copy code*
+**echo "Hello, world!"**
+
+This command will output Hello, world! to the terminal.
+
+Displaying Variables:
+
+You can use echo to display the value of a variable:
+
+*bash
+Copy code*
+**name="John"
+echo "My name is $name"**
+
+This command will output My name is John to the terminal, interpolating the value of the variable name.
+
+Newlines and Special Characters:
+
+You can use the -e option to interpret backslash escapes, such as \n for a newline:
+
+*bash
+Copy code*
+**echo -e "Line 1\nLine 2"**
+
+This command will output two lines, separating Line 1 and Line 2 with a newline.
+
+echo is a simple yet useful command for generating output in the terminal, making it helpful for displaying messages, variable values, or formatting text within scripts or when working directly on the command line.
