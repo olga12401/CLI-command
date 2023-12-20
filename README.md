@@ -11,16 +11,14 @@ The 'ls' command in the command line interface (CLI) is used to list the content
 
 ## cat
 The 'cat' command is used to display the contents of a file. The term "cat" stands for "concatenate," which originally was its primary function: to concatenate and display the content of one or multiple files. However, it's most commonly used to simply display the contents of a single file.
-
-*bash
-Copy code :*
-**cat example.txt**
-
+```
+cat example.txt
+```
 To display the contents of both file1.txt and file2.txt, you can use 
 
-*bash
-Copy code :*
-**cat file1.txt file2.txt**
+```
+cat file1.txt file2.txt
+```
 
 ### cat in analytics or data processing
 
@@ -28,34 +26,31 @@ In analytics or data processing, the cat command might be used in conjunction wi
 
 Data Pipelining: In data analysis, you might use cat to concatenate multiple files and then redirect the output to another command for further processing. For instance:
 
-*bash
-Copy code :*
-**cat file1.txt file2.txt | some_analysis_tool**
-
+```
+cat file1.txt file2.txt | some_analysis_tool
+```
 Here, cat concatenates the contents of file1.txt and file2.txt, and the combined output is passed as input to the some_analysis_tool for further analysis.
 
 **Combining Files:** In data processing workflows, analysts might use cat to combine datasets or log files before processing them further:
 
-*bash
-Copy code :*
-**cat data_file_*.csv > combined_data.csv**
+```
+cat data_file_*.csv > combined_data.csv
+```
 
 This command merges multiple CSV files (data_file_*.csv) into a single file (combined_data.csv) using output redirection.
 
 **Quickly Viewing File Contents:** Analysts might use cat to quickly preview the contents of a file before processing it further:
 
-*bash
-Copy code :*
-**cat large_data_file.csv | head**
-
+```
+cat large_data_file.csv | head
+```
 Here, cat is used to display the contents of large_data_file.csv, and head is used to show only the first few lines for a quick view.
 
 **Appending Data:** Analysts might append data to an existing file using cat and output redirection:
 
-*bash
-Copy code :*
-**cat new_data.csv >> existing_data.csv**
-
+```
+cat new_data.csv >> existing_data.csv
+```
 This command appends the content of new_data.csv to existing_data.csv without overwriting the original file.
 
 In analytics and data processing, cat is often used as a simple tool to manage and manipulate data streams, combining with other commands or tools through input and output redirection to perform various data-related tasks. 
@@ -68,31 +63,28 @@ Here are a few examples of how the echo command is used:
 
 **Displaying Text:**
 
-*bash
-Copy code*
-**echo "Hello, world!"**
-
+```
+echo "Hello, world!"
+```
 This command will output Hello, world! to the terminal.
 
 **Displaying Variables:**
 
 You can use echo to display the value of a variable:
 
-*bash
-Copy code*
-**name="John"
-echo "My name is $name"**
-
+```
+name="John"
+echo "My name is $name"
+```
 This command will output My name is John to the terminal, interpolating the value of the variable name.
 
 **Newlines and Special Characters:**
 
 You can use the -e option to interpret backslash escapes, such as \n for a newline:
 
-*bash
-Copy code*
-**echo -e "Line 1\nLine 2"**
-
+```
+echo -e "Line 1\nLine 2"
+```
 This command will output two lines, separating Line 1 and Line 2 with a newline.
 
 echo is a simple yet useful command for generating output in the terminal, making it helpful for displaying messages, variable values, or formatting text within scripts or when working directly on the command line.
