@@ -255,3 +255,62 @@ Adding the -f flag will force move and overwrite existing files without promptin
 mv -f file1.txt /path/to/destination/
 ```
 Use this with caution as it overwrites files without confirmation.
+
+## rm
+
+The 'rm' command in the Command Line Interface (CLI) is used to remove or delete files and directories.
+
+Here's the basic syntax of the rm command:
+
+```
+rm [options] file1 file2 ...
+```
+file1, file2, etc.: These are the names of the files or directories you want to remove.
+Here are some common uses of the rm command:
+
+Removing Files:
+
+To delete a single file:
+
+```
+rm filename.txt
+```
+This command deletes the file named filename.txt.
+
+Removing Multiple Files:
+
+You can delete multiple files at once:
+
+```
+rm file1.txt file2.txt
+```
+This command removes file1.txt and file2.txt.
+
+Removing Directories:
+
+To remove a directory and its contents recursively, use the -r or -R flag (recursive):
+
+```
+rm -r directory1
+```
+Replace directory1 with the name of the directory you want to delete. Be careful with this command as it deletes directories and their contents permanently.
+
+Force Delete:
+
+Adding the -f flag forces the deletion without confirmation:
+
+```
+rm -f filename.txt
+```
+Use this flag carefully as it deletes files without asking for confirmation.
+
+Interactive Delete:
+
+Using the -i flag makes the rm command interactive, asking for confirmation before each removal:
+
+```
+rm -i filename.txt
+```
+This prompts for confirmation before deleting the file.
+
+The rm command is a powerful tool, but it's important to be cautious when using it, especially with the -r (recursive) or -f (force) flags, as it permanently deletes files and directories without moving them to the trash or providing an undo option. Always double-check the files and directories you're deleting to avoid unintentional data loss.
