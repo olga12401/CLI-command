@@ -46,7 +46,20 @@ Sorting and Displaying by Time/Size: You can sort files by modification time or 
 ls -t   # Sort by time
 ls -S   # Sort by file size
 ```
-ls is a fundamental command for navigating and understanding the contents of directories in the CLI. It helps users to quickly check what files and directories are available and their properties within the current or specified location.
+
+The command 'ls -la' is used to list detailed information about files and directories, including hidden files, in a long format.
+```
+ls -la
+```
+
+![image](https://github.com/olga12401/CLI-command/assets/86374953/a61eca52-a64e-42de-bba4-364cdcdf864c)
+
+**ls:** This command is used to list the contents of a directory.
+**-la:** These are options or flags that modify the behavior of the ls command:
+**-l:** Displays output in long format, providing detailed information about each file or directory. This includes permissions, ownership, size, modification date, etc.
+**-a:** Shows all files, including hidden files whose names start with a dot (.) in Unix-based systems. By default, ls doesn't display hidden files.
+
+'ls' is a fundamental command for navigating and understanding the contents of directories in the CLI. It helps users to quickly check what files and directories are available and their properties within the current or specified location.
 
 ## cat
 The 'cat' command is used to display the contents of a file. The term "cat" stands for "concatenate," which originally was its primary function: to concatenate and display the content of one or multiple files. However, it's most commonly used to simply display the contents of a single file.
