@@ -368,4 +368,59 @@ So, when you execute grep root /etc/*, the command tries to search for the word 
 grep root /etc/*
 ```
 
+# wc
 
+The 'wc' command in the Command Line Interface (CLI) is used to count words, lines, and characters in a file or input provided through standard input.
+
+Here's the basic syntax of the wc command:
+
+```
+wc [options] [file1 file2 ...]
+```
+file1, file2, etc.: These are the names of the files for which you want to count words, lines, and characters. If no file is specified, wc reads from the standard input, which can be the output of another command using a pipe |.
+Here are some common uses of the wc command:
+
+**Counting Lines:**
+
+To count the number of lines in a file:
+
+```
+wc -l filename.txt
+```
+This command outputs the number of lines in filename.txt.
+
+**Counting Words:**
+
+To count the number of words in a file:
+
+```
+wc -w filename.txt
+```
+This command displays the count of words in filename.txt.
+
+**Counting Characters:**
+
+To count the number of characters in a file:
+
+```
+wc -c filename.txt
+```
+This command shows the total count of characters in filename.txt.
+
+**Displaying All Counts:**
+
+To display counts for lines, words, and characters together:
+
+```
+wc filename.txt
+```
+Running wc without options provides the counts for lines, words, and characters in the specified file.
+
+**Counting Multiple Files:**
+
+You can count lines, words, and characters in multiple files simultaneously:
+
+```
+wc file1.txt file2.txt
+```
+This command displays the counts for each file separately.
