@@ -1,6 +1,12 @@
 # CLI-command
 
-## cd
+Ctrl+ S - to save info in VC
+
+':q' - to quit out of VI
+':q!' - to quit out of VI without saving
+
+
+# cd
 
 The 'cd' command in the Command Line Interface (CLI) is used to change the current working directory in a Unix-based or Linux system. It stands for "change directory".
 
@@ -11,7 +17,7 @@ cd [directory]
 ```
 directory: This is the path to the directory you want to change to. If no directory is specified, cd will take you to your home directory.
 
-## ls
+# ls
 
 The 'ls' command in the command line interface (CLI) is used to list the contents of a directory. It displays the files and directories within the specified directory, allowing you to see what files and folders exist in a particular location.
 
