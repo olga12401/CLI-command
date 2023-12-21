@@ -3,6 +3,7 @@
 Ctrl+ S - to save info in VC
 
 ':q' - to quit out of VI
+
 ':q!' - to quit out of VI without saving
 
 
