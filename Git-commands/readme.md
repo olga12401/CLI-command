@@ -53,3 +53,14 @@ git add .
 git log
 ```
 
+10. Create a commit with the message
+
+```
+git commit -m "new command for Git"
+```
+
+11. Up-to-date
+
+```
+git push
+```
