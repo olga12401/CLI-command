@@ -1,2 +1,6 @@
 # DBT-command
 
+```
+dbt debug 
+```
+
