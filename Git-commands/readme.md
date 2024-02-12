@@ -64,3 +64,26 @@ git commit -m "new command for Git"
 ```
 git push
 ```
+## Sequence of commands when adding information to GitHub
+
+``` 
+git status 
+```
+
+``` 
+git add . 
+```
+
+```
+git commit -m " to write a name branch"
+```
+
+```
+git push
+
+```
+
+
+
+
+
