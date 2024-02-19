@@ -75,3 +75,82 @@ To exit the virtual environment, simply run:
 ```
 deactivate
 ```
+
+## Venv using python 3.11.8
+
+To install Python 3.11.8 and create a virtual environment on Ubuntu running on Windows Subsystem for Linux (WSL), you can follow these steps. The steps involve installing Python, verifying the installation, and then setting up a virtual environment.
+
+1. Update and Upgrade Package List
+First, ensure your package list and installed packages are updated.
+
+```
+sudo apt update
+sudo apt upgrade
+```
+
+2. Install Required Dependencies
+Before installing Python 3.11.8, you should ensure that all the dependencies are satisfied.
+
+```
+sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev curl libbz2-dev
+```
+
+3. Download Python 3.11.8
+You can download Python 3.11.8 from the official Python website. It's a good practice to check the latest version available on the Python official website to get the correct version number and download link.
+
+```
+curl -O https://www.python.org/ftp/python/3.11.8/Python-3.11.8.tar.xz
+```
+
+4. Extract the Tarball
+After downloading, extract the tarball and navigate into the directory.
+
+```
+tar -xf Python-3.11.8.tar.xz
+cd Python-3.11.8
+```
+
+5. Configure and Install Python 3.11.8
+Configure the Python source code and start the installation process.
+
+```
+./configure --enable-optimizations
+make -j $(nproc)
+sudo make altinstall
+```
+
+Using make altinstall instead of make install prevents replacing the default python3 binary file, thus avoiding potential issues with system scripts that rely on Python 2.7.
+
+6. Verify Installation
+Ensure Python 3.11.8 is correctly installed by checking its version.
+
+```
+python3.11 --version
+```
+
+7. Create a Virtual Environment
+Now that Python 3.11.8 is installed, you can create a virtual environment. First, choose or create a directory where you want to place your virtual environment. Then, create the virtual environment using the following command.
+
+```
+python3.11 -m venv myenv
+```
+
+Replace myenv with your desired name for the virtual environment.
+
+8. Activate the Virtual Environment
+To start using the virtual environment, you need to activate it.
+
+```
+source myenv/bin/activate
+```
+
+When the virtual environment is activated, you'll see its name in the terminal prompt. Now, you're in a separate Python environment where you can install packages without affecting the global Python installation.
+
+Deactivate Virtual Environment
+To stop using the virtual environment and go back to the global Python environment, use the following command:
+
+```
+deactivate
+```
+
+This process allows you to manage Python packages and dependencies more effectively, especially when working on multiple Python projects.
