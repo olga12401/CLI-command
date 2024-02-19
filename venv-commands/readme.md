@@ -80,7 +80,8 @@ deactivate
 
 To install Python 3.11.8 and create a virtual environment on Ubuntu running on Windows Subsystem for Linux (WSL), you can follow these steps. The steps involve installing Python, verifying the installation, and then setting up a virtual environment.
 
-###  Step 1. Update and Upgrade Package List
+###  Step 1: Update and Upgrade Package List
+
 First, ensure your package list and installed packages are updated.
 
 ```
@@ -88,21 +89,24 @@ sudo apt update
 sudo apt upgrade
 ```
 
-###  Step 2. Install Required Dependencies
+###  Step 2: Install Required Dependencies
+
 Before installing Python 3.11.8, you should ensure that all the dependencies are satisfied.
 
 ```
 sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev curl libbz2-dev
 ```
 
-###  Step 3. Download Python 3.11.8
+###  Step 3: Download Python 3.11.8
+
 You can download Python 3.11.8 from the official Python website. It's a good practice to check the latest version available on the Python official website to get the correct version number and download link.
 
 ```
 curl -O https://www.python.org/ftp/python/3.11.8/Python-3.11.8.tar.xz
 ```
 
-###  Step 4. Extract the Tarball
+###  Step 4: Extract the Tarball
+
 After downloading, extract the tarball and navigate into the directory.
 
 ```
@@ -110,7 +114,8 @@ tar -xf Python-3.11.8.tar.xz
 cd Python-3.11.8
 ```
 
-###  Step 5. Configure and Install Python 3.11.8
+###  Step 5: Configure and Install Python 3.11.8
+
 Configure the Python source code and start the installation process.
 
 ```
@@ -121,14 +126,16 @@ sudo make altinstall
 
 Using make altinstall instead of make install prevents replacing the default python3 binary file, thus avoiding potential issues with system scripts that rely on Python 2.7.
 
-###  Step 6. Verify Installation
+###  Step 6: Verify Installation
+
 Ensure Python 3.11.8 is correctly installed by checking its version.
 
 ```
 python3.11 --version
 ```
 
-### Step 7. Create a Virtual Environment
+### Step 7: Create a Virtual Environment
+
 Now that Python 3.11.8 is installed, you can create a virtual environment. First, choose or create a directory where you want to place your virtual environment. Then, create the virtual environment using the following command.
 
 ```
@@ -137,7 +144,8 @@ python3.11 -m venv myenv
 
 Replace myenv with your desired name for the virtual environment.
 
-### Step 8. Activate the Virtual Environment
+### Step 8: Activate the Virtual Environment
+
 To start using the virtual environment, you need to activate it.
 
 ```
