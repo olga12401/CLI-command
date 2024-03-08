@@ -53,3 +53,23 @@ dbt compile
 Code Review: The compiled SQL can be reviewed by team members for coding standards, optimization, and to ensure business logic is correctly implemented. This is especially useful in teams where not everyone might be familiar with dbt's templating language (Jinja).
 
 Integration with Other Tools: In some cases, you might want to use the compiled SQL with other tools or processes outside of dbt. For example, you might have a custom deployment process that requires reviewing or modifying the SQL before execution.
+
+## How old data in the source
+
+This feature helps ensure that your raw data sources are being updated as expected. It's particularly useful in data pipelines where timely data updates are critical for accurate reporting and analysis.
+
+```
+dbt source freshness
+```
+
+```
+dbt snapshot
+```
+
+```
+dbt test
+```
+
+```
+dbt run-operation learn_variables
+```
